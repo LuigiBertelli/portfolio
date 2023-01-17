@@ -1,12 +1,18 @@
+import { useEffect } from 'react';
 
-const Projects = () => {
+import langObj from '../languages/components/projects.json';
+import personalDataObj from '../configs/personalData.json';
+
+const Projects = ({lang}) => {
+  useEffect(() => {
+    document.querySelector('.projects-description').innerHTML = langObj.languages[lang].descriptionHtml.trim();
+  }, [lang])
+
   return (
     <section className="projects-container">
-        <h2>Projects</h2>
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare nunc vel condimentum interdum. Morbi et augue eros.
-        </p>
-        <a className="btn" href="https://github.com/LuigiBertelli?tab=repositories">My Projects</a>
+        <h2>{langObj.languages[lang].title}</h2>
+        <div className="projects-description"></div>
+        <a className="btn" href={`${personalDataObj.github}?tab=repositories`}>{langObj.languages[lang].myProjects}</a>
     </section>
   )
 }

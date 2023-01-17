@@ -1,0 +1,14 @@
+{
+    "languages": {
+        "en": {
+            "phone": { "title": "Phone" },
+            "mail": { "title": "E-mail" },
+            "pin": { "title": "Localization" }
+        },
+        "pt": {
+            "phone": { "title": "Telefone" },
+            "mail": { "title": "E-mail" },
+            "pin": { "title": "Localisação" }
+        } 
+    }
+}

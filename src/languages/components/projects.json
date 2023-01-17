@@ -1,0 +1,15 @@
+{
+    "languages": {
+        "en": {
+            "title": "Projects",
+            "descriptionHtml": "",
+            "myProjects": "My Projects"
+            
+        },
+        "pt": {
+            "title": "Projetos",
+            "descriptionHtml": "",
+            "myProjects": "Meus Projetos"
+        } 
+    }
+}

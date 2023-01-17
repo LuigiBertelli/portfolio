@@ -1,10 +1,12 @@
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 
+import personalDataObj from '../configs/personalData.json';
+
 import '../styles/components/socialnetworks.sass';
 
 const socialNetworks = [
-    {name: 'linkedin', icon: <FaLinkedinIn/>, url: 'https://www.linkedin.com/in/luigi-ferreira-bertelli-6a8514199'},
-    {name: 'github', icon: <FaGithub/>, url: 'https://github.com/LuigiBertelli'},
+    {name: 'linkedin', icon: <FaLinkedinIn/>, url: personalDataObj.linkedin},
+    {name: 'github', icon: <FaGithub/>, url: personalDataObj.github},
 ];
 
 const SocialNetworks = () => {

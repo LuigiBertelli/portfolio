@@ -1,22 +1,34 @@
 import {AiFillPhone, AiOutlineMail, AiFillEnvironment} from 'react-icons/ai';
 
+import langObj from '../languages/components/contactinfo.json';
+import personalDataObj from '../configs/personalData.json';
+
 import '../styles/components/contactinfo.sass';
 
 const contactinfo = [
-    {title: 'Phone', icon: <AiFillPhone id="phone-icon"/>, value: '+39 3311278137'},
-    {title: 'E-mail', icon: <AiOutlineMail id="mail-icon"/>, value: 'berteluigi@gmail.com'},
-    {title: 'Localization', icon: <AiFillEnvironment id="pin-icon"/>, value: 'Gildone - CB/ Italy'}
+    {
+        id: 'phone',
+        icon: <AiFillPhone id="phone-icon"/>, 
+        value: personalDataObj.phone},
+    {
+        id: 'mail',
+        icon: <AiOutlineMail id="mail-icon"/>, 
+        value: personalDataObj.mail},
+    {
+        id: 'pin',
+        icon: <AiFillEnvironment id="pin-icon"/>, 
+        value: personalDataObj.pin}
 ];
 
-const ContactInfo = () => {
+const ContactInfo = ({lang}) => {
   return (
     <section id="contact-info">
         {
             contactinfo.map(contact => (
-                <div key={contact.title} className="info-card">
+                <div key={contact.id} className="info-card">
                     {contact.icon}
                     <div>
-                        <h3>{contact.title}</h3>
+                        <h3>{langObj.languages[lang][contact.id].title}</h3>
                         <p>{contact.value}</p>
                     </div>
                 </div>

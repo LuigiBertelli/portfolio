@@ -1,0 +1,12 @@
+{
+    "languages": {
+        "en": {
+            "title": "About me",
+            "descriptionHtml": ""
+        },
+        "pt": {
+            "title": "Sobre",
+            "descriptionHtml": ""
+        } 
+    }
+}

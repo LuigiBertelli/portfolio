@@ -5,12 +5,12 @@ import Technologies from './Technologies'
 
 import '../styles/components/maincontent.sass'
 
-const MainContent = () => {
+const MainContent = ({lang}) => {
   return (
     <div id="main-content">
-      <AboutMe/>
-      <Technologies/>
-      <Projects/>
+      <AboutMe lang={lang} />
+      <Technologies lang={lang} />
+      <Projects lang={lang} />
     </div>
   )
 }

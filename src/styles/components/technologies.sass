@@ -11,19 +11,17 @@
 
         .technology-card
             @include mixins.center
-            gap: 1rem
+            flex-direction: column
+            gap: .4rem
             padding: 1rem
             border: 1px solid #333
             width: 45%
             border-radius: variables.$card-border-radius
             word-break: break-all
 
-            .tech
-                @include mixins.center
-                flex-direction: column
-                h3
-                    color: variables.$text-color
-                    margin-bottom: 1rem
+            h3
+                color: variables.$text-color
+                margin-bottom: 1rem
 
             svg
                 font-size: 6rem

@@ -1,0 +1,12 @@
+{
+    "languages": {
+        "en": {
+            "title": "Full Stack Developer",
+            "btnResume": "Download Resume"
+        },
+        "pt": {
+            "title": "Desenvolvedor Full Stack",
+            "btnResume": "Download Currículo"
+        }
+    }
+}
